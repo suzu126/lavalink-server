@@ -1,5 +1,9 @@
 FROM eclipse-temurin:17
 WORKDIR /opt/
-ADD https://repo1.maven.org/maven2/dev/arbjerg/lavalink/Lavalink-Server/3.7.13/Lavalink-Server-3.7.13.jar app.jar
+
+ADD https://github.com/Cog-Creators/Lavalink-Jars/releases/download/3.7.13/Lavalink.jar app.jar
+
 COPY application.yml .
+
+EXPOSE 443
 CMD ["java", "-jar", "app.jar"]
