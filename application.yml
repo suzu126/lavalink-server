@@ -1,8 +1,10 @@
 server:
-  port: 2333
+  port: 443
+
 lavalink:
   server:
     password: "mypassword"
+
 logging:
   level:
     root: INFO
